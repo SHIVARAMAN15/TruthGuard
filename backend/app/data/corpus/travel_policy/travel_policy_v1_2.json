@@ -1,0 +1,12 @@
+{
+  "id": "DOC-TRV-2023-001",
+  "title": "Corporate Travel & Expense Policy v1.2",
+  "document_type": "standard_policy",
+  "department": "Finance & Global Operations",
+  "effective_date": "2023-01-15",
+  "version": "1.2",
+  "status": "deprecated_partially",
+  "supersedes": ["DOC-TRV-2021-001"],
+  "superseded_by": ["DOC-TRV-2025-AMD1"],
+  "content": "Section 4.2 - Meals and Incidental Expenses (M&IE): The standard maximum daily reimbursement cap for all domestic employee business travel is fixed at $75 per calendar day. This applies uniformly across all metropolitan areas and secondary cities regardless of flight duration."
+}

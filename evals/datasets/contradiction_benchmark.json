@@ -1,0 +1,20 @@
+[
+  {
+    "test_id": "TC-TRV-01",
+    "category": "superseded_amendment",
+    "query": "What is the maximum daily meal allowance for employee business travel in Chicago?",
+    "conflicting_docs": ["DOC-TRV-2023-001", "DOC-TRV-2025-AMD1"],
+    "traditional_rag_failure_mode": "Hallucinates a blended compromise (e.g., 'Between $75 and $100 per day')",
+    "truthguard_expected_behavior": "Identifies that DOC-TRV-2025-AMD1 supersedes DOC-TRV-2023-001 for Tier-1 cities like Chicago, confirming the active rate is $100/day, with full provenance audit.",
+    "expected_status": "RESOLVED_BY_SUPERSEDING_RULE"
+  },
+  {
+    "test_id": "TC-DISC-02",
+    "category": "unresolvable_conflict",
+    "query": "Can a senior account executive provide a 20% discount on an enterprise contract without CFO approval?",
+    "conflicting_docs": ["DOC-DISC-SALES-2024", "DOC-DISC-FIN-2024"],
+    "traditional_rag_failure_mode": "Arbitrarily picks either 25% (allowed) or 15% (disallowed) depending on passage chunk ordering",
+    "truthguard_expected_behavior": "Detects mutual contradiction between Sales Memo (25%) and Finance Memo (15%) with identical dates and no superseding hierarchy; surfaces both positions and flags the dispute as unresolvable.",
+    "expected_status": "UNRESOLVABLE_CONFLICT"
+  }
+]

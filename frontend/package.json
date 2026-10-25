@@ -1,0 +1,17 @@
+{
+  "name": "truthguard-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TruthGuard - Zero-Trust Adversarial Verification Dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
+}
